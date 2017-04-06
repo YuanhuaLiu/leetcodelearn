@@ -6,11 +6,11 @@ public class BinaryTreeLevelOrderTraversalII {
 		
 	}
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
         if (null==root)
             return list;
              
-        List<TreeNode> nodes = new ArrayList<>();
+        List<TreeNode> nodes = new ArrayList<TreeNode>();
         nodes.add(root);
          
         traverseLevel(list, nodes);
@@ -19,8 +19,8 @@ public class BinaryTreeLevelOrderTraversalII {
     }
      
     private void traverseLevel(List<List<Integer>> list, List<TreeNode> nodes) {
-        List<Integer> item = new ArrayList<>();
-        List<TreeNode> nextLevel = new ArrayList<>();
+        List<Integer> item = new ArrayList<Integer>();
+        List<TreeNode> nextLevel = new ArrayList<TreeNode>();
         for (TreeNode node : nodes) {
             item.add(node.val);
             if (node.left!=null)
