@@ -6,12 +6,12 @@ public class MinimumDepthofBinaryTree {
         if (null==root)
             return 0;
          
-        List<TreeNode> list = new ArrayList<>();
+        List<TreeNode> list = new ArrayList<TreeNode>();
         list.add(root);
          
         int depth = 1;
         while (true) {
-            List<TreeNode> newList = new ArrayList<>();
+            List<TreeNode> newList = new ArrayList<TreeNode>();
             for (TreeNode node : list) {
                 if (node.left==null && node.right==null)
                     return depth;

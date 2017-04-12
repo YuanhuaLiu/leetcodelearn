@@ -8,12 +8,12 @@ public class PascalTriangle {
 	}
 	public static List<List<Integer>> generate(int numRows) {
         // 0
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> list = new ArrayList<List<Integer>>();
         if (numRows==0)
             return list;
          
         // 1
-        List<Integer> first = new ArrayList<>();
+        List<Integer> first = new ArrayList<Integer>();
         first.add(1);
         list.add(first);
         if (numRows==1)
@@ -22,7 +22,7 @@ public class PascalTriangle {
         // >1
         for (int i=2; i<=numRows; i++) {
             List<Integer> latest = list.get(list.size()-1);
-            List<Integer> item = new ArrayList<>();
+            List<Integer> item = new ArrayList<Integer>();
             item.add(1);
             int prev = 0;
             for (int num : latest) {

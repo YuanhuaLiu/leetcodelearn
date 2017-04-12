@@ -6,14 +6,14 @@ public class PascalTriangleII {
 		System.out.println(getRow(4));
 	}
 	 public static List<Integer> getRow(int rowIndex) {
-	        List<Integer> list = new ArrayList<>();
+	        List<Integer> list = new ArrayList<Integer>();
 	        list.add(1);
 	         
 	        if (rowIndex==0)
 	            return list;
 	         
 	        for (int i=1; i<=rowIndex; i++) {
-	            List<Integer> newList = new ArrayList<>();
+	            List<Integer> newList = new ArrayList<Integer>();
 	            newList.add(1);
 	            int prev=0;
 	            for (int num : list) {
