@@ -33,7 +33,7 @@ public class Backbag01_1 {
                     c[i][j]= Math.max(c[i-1][j],c[i-1][j-arrW[i]]+arrV[i]);
                 }else{
                     c[i][j] = c[i-1][j];  
-                };
+                }
             }
         }
     }
