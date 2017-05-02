@@ -1,11 +1,10 @@
 package Medium;
+
+import easy.TreeNode;
+
 class InvalidBSTException extends RuntimeException {
 }
-class TreeNode{
-	TreeNode left;
-	TreeNode right;
-	int val;
-}
+
 public class ValidateBinarySearchTree {
 	 public boolean isValidBST(TreeNode root) {
 	        if (null==root)

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class evalRPN {
 	 public int evalRPN(String[] tokens) {
-	        Stack<Integer> stack = new Stack<>();
+	        Stack<Integer> stack = new Stack<Integer>();
 	        for (String token : tokens) {
 	            if (token.matches("[+-]{0,1}\\d+")) {
 	                stack.push(Integer.parseInt(token));

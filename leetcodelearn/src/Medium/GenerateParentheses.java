@@ -18,7 +18,7 @@ public class GenerateParentheses {
 		}
 	}
 	 public List<String> generateParenthesis(int n) {
-	        List<String> list = new ArrayList<>();
+	        List<String> list = new ArrayList<String>();
 	        append(n, 0, 0, "", list);
 	        return list;
 	    }

@@ -1,7 +1,8 @@
 package easy;
 
 public class TreeNode {
-	TreeNode left;
-	TreeNode right;
+	public TreeNode left;
+	public TreeNode right;
 	public int val;
+	
 }
