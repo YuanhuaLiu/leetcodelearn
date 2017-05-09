@@ -1,6 +1,10 @@
 package Medium;
 
 class TreeNode{
+	public TreeNode(int value) {
+		this.value=value;
+	}
+	int value;
 	TreeNode left;
 	TreeNode right;
 }

@@ -1,6 +1,5 @@
 package Medium;
 
-import jdk.nashorn.internal.runtime.regexp.joni.constants.Traverse;
 
 public class UniquePathsII {
 	public int uniquePathsWithObstacles(int[][] obstacleGrid){
