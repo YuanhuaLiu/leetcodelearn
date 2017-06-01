@@ -1,4 +1,4 @@
-package CodingInterviewGuide;
+package CodingInterviewGuide_stack;
 
 import java.util.Stack;
 

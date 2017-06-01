@@ -1,16 +1,15 @@
-package CodingInterviewGuide;
+package CodingInterviewGuide_stack;
 
 import java.util.Stack;
 
 /*
- * 设计一个有getMin功能的栈
- * 实现一个特殊的栈，在实现栈的基本功能的基础上，在实现返回栈中最小元素的操作
+ * 功能同MyStack1
  */
-public class MyStack1 {
-    private Stack<Integer> stackData;
+public class MyStack2 {
+	private Stack<Integer> stackData;
     private Stack<Integer> stackMin;
     
-    public MyStack1(){
+    public MyStack2(){
     	this.stackData=new Stack<Integer>();
     	this.stackMin=new Stack<Integer>();
     }
@@ -20,6 +19,9 @@ public class MyStack1 {
 			this.stackMin.push(newNum);
 		}else if (newNum<=this.getMin()) {
 			this.stackMin.push(newNum);
+		}else {
+			int newMin=this.stackMin.peek();
+			this.stackMin.push(newMin);
 		}
     	
     	this.stackData.push(newNum);
@@ -30,11 +32,8 @@ public class MyStack1 {
     	if (this.stackData.isEmpty()) {
 			throw new RuntimeException("Your stack is empty");
 		}
-    	int value =this.stackData.pop();
-    	if (value==this.getMin()) {
-			this.stackMin.pop();
-		}
-    	return value;
+		this.stackMin.pop();
+    	return this.stackData.pop();
     }
     
     
