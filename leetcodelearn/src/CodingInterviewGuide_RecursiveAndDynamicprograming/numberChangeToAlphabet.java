@@ -23,6 +23,8 @@ public class numberChangeToAlphabet {
 		if (chs[i]=='0') {
 			return 0;
 		}
+		    
+		
 		
 		int res=process(chs, i+1);
 		if (i+1<chs.length&&(chs[i]-'0')*10+chs[i+1]-'0'<27) {
